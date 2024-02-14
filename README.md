@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Source](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Source](https://github.com/DagimTizazu/time-tracking-dashboard)
+- Live Site URL: [Live site](https://time-tracking-dashboard-iota-eight.vercel.app/)
 
 ## My process
 
