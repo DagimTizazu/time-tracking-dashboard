@@ -3,7 +3,7 @@ import React from 'react'
 function Card({ type, current, backgroundcolor, backgroundimage, previous, frame  }) {
   return (
     <div className="card-container" style={{
-      backgroundImage: `url('${backgroundimage}')`,
+      backgroundImage: `url('file://${backgroundimage}')`,
       backgroundColor: backgroundcolor,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '94% -8%'
