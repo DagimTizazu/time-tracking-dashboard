@@ -3,11 +3,11 @@ import avatar from '../assets/image-jeremy.png'
 import data from '../assets/data.json'
 import Card from './Card'
 import WorkIcon from '../../images/icon-work.svg'
-import PlayIcon from '../assets/icon-play.svg'
-import StudyIcon from '../assets/icon-study.svg'
-import ExerciseIcon from '../assets/icon-exercise.svg'
-import SocialIcon from '../assets/icon-social.svg'
-import SelfCareIcon from '../assets/icon-self-care.svg'
+import PlayIcon from '../../images/icon-play.svg'
+import StudyIcon from '../../images/icon-study.svg'
+import ExerciseIcon from '../../images/icon-exercise.svg'
+import SocialIcon from '../../images/icon-social.svg'
+import SelfCareIcon from '../../images/icon-self-care.svg'
 
 function App() {
   const [timeFrame, setTimeFrame] = useState('weekly');
