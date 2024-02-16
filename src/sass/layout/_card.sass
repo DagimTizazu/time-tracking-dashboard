@@ -1,4 +1,6 @@
 .card-container
+    display: flex
+    align-items: flex-end
     border-radius: 15px
     padding-top: 40px
     margin-bottom: 27px
@@ -7,8 +9,12 @@
         background-size: 30%
         background-position: 94% -1% !important
         padding-top: 25px
+    @media (min-width: 1440px)
+        padding-top: 45px
+        background-position: 91.3% -3% !important
 
 .inner-card-container
+    width: 100%
     padding: 20px 25px 20px
     background: $dark-blue
     border-radius: 15px
@@ -19,17 +25,23 @@
     &:hover
         background: lighten($dark-blue, 20%)
     @media(min-width: 1000px)
-        grid-template-rows: repeat(2, auto)
         grid-template-rows: repeat(3, auto)
         padding: 20px
     @media(max-width: 350px)
+        grid-template-rows: repeat(3, auto)
         column-gap: 20px
+    @media (min-width: 1440px)
+        padding: 30px
 
 .card-type
     font-size: 1.05em
     @media(min-width: 1000px)
         font-size: .75em
         margin-bottom: 10px
+    @media (min-width: 1440px)
+        font:
+            size: 1.15em
+            weight: 400
 
 .card-current
     font:
@@ -37,6 +49,8 @@
         weight: 300
     @media(min-width: 1000px)
         font-size: 2.4em
+    @media (min-width: 1440px)
+        font-size: 3.5em
 
 .menu-dots
     fill: #BBC0FF
@@ -56,8 +70,13 @@
     align-self: center
     color: $pale-blue
     font-size: .85em
+    @media(max-width: 350px)
+        grid-column: 1 / 2
+        justify-self: start
     @media(min-width: 1000px)
         font-size: .7em
         font-weight: 300
         justify-self: left
         white-space: nowrap
+    @media (min-width: 1440px)
+        font-size: .93em
