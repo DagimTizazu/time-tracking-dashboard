@@ -1,5 +1,5 @@
 import React from 'react'
-
+import WorkIcon from '../assets/icon-work.svg'
 import PlayIcon from '../assets/icon-play.svg'
 import StudyIcon from '../assets/icon-study.svg'
 import ExerciseIcon from '../assets/icon-exercise.svg'
@@ -9,7 +9,7 @@ import SelfCareIcon from '../assets/icon-self-care.svg'
 function Card({ type, current, backgroundcolor, index, previous, frame }) {
   
   const backgroundImages = [
-    '../assets/icon-work.svg',
+    WorkIcon,
     PlayIcon,
     StudyIcon,
     ExerciseIcon,
