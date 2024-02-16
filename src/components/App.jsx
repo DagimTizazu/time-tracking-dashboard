@@ -64,7 +64,7 @@ function App() {
         <Card key={i}
           type={data.title}
           backgroundcolor={backgroundColors[i]}
-          backgroundimage={backgroundImages[i]}
+          backgroundimage={backgroundImages[i] + ' !important'}
           current={
             timeFrame === 'daily' ? data.timeframes.daily.current :
               timeFrame === 'weekly' ? data.timeframes.weekly.current :
