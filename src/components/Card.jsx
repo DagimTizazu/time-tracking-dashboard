@@ -3,8 +3,8 @@ import React from 'react'
 function Card({ type, current, backgroundcolor, backgroundimage, previous, frame  }) {
   return (
     <div className="card-container" style={{
+      backgroundImage: `url(${backgroundimage} ) `,
       backgroundColor: backgroundcolor,
-      backgroundImage: `url(' + require${backgroundimage} + ') `,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '94% -8%'
     }}>
