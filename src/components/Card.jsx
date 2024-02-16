@@ -4,7 +4,7 @@ function Card({ type, current, backgroundcolor, backgroundimage, previous, frame
   return (
     <div className="card-container" style={{
       backgroundColor: backgroundcolor,
-      backgroundImage: `'url(${backgroundimage}) '`,
+      backgroundImage: `url(' + require${backgroundimage} + ') `,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '94% -8%'
     }}>
