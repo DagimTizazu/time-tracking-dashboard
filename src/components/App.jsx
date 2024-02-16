@@ -2,12 +2,7 @@ import React, { useState } from 'react'
 import avatar from '../assets/image-jeremy.png'
 import data from '../assets/data.json'
 import Card from './Card'
-import WorkIcon from '../assets/icon-work.svg'
-import PlayIcon from '../assets/icon-play.svg'
-import StudyIcon from '../assets/icon-study.svg'
-import ExerciseIcon from '../assets/icon-exercise.svg'
-import SocialIcon from '../assets/icon-social.svg'
-import SelfCareIcon from '../assets/icon-self-care.svg'
+
 
 function App() {
   const [timeFrame, setTimeFrame] = useState('weekly');
@@ -28,15 +23,6 @@ function App() {
     'hsl(264, 64%, 52%)',
     'hsl(43, 84%, 65%)'
   ];
-
-  const backgroundImages = [
-    WorkIcon,
-    PlayIcon,
-    StudyIcon,
-    ExerciseIcon,
-    SocialIcon,
-    SelfCareIcon
-  ]
 
   return (
     <main>
@@ -62,9 +48,9 @@ function App() {
 
       {data.map((data, i) => (
         <Card key={i}
+          index={i}
           type={data.title}
           backgroundcolor={backgroundColors[i]}
-          backgroundimage={backgroundImages[i]}
           current={
             timeFrame === 'daily' ? data.timeframes.daily.current :
               timeFrame === 'weekly' ? data.timeframes.weekly.current :
