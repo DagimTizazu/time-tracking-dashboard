@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import avatar from '../assets/image-jeremy.png'
 import data from '../assets/data.json'
 import Card from './Card'
-import WorkIcon from '../assets/icon-work.svg'
-import PlayIcon from '../assets/icon-play.svg'
-import StudyIcon from '../assets/icon-study.svg'
-import ExerciseIcon from '../assets/icon-exercise.svg'
-import SocialIcon from '../assets/icon-social.svg'
-import SelfCareIcon from '../assets/icon-self-care.svg'
+import WorkIcon from '/icon-work.svg'
+import PlayIcon from '/icon-play.svg'
+import StudyIcon from '/icon-study.svg'
+import ExerciseIcon from '/icon-exercise.svg'
+import SocialIcon from '/icon-social.svg'
+import SelfCareIcon from '/icon-self-care.svg'
 
 function App() {
   const [timeFrame, setTimeFrame] = useState('weekly');
